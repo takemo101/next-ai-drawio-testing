@@ -30,3 +30,7 @@ restart port=default_port: down
 # Pull latest image
 pull:
     docker pull ghcr.io/dayuanjiang/next-ai-draw-io:latest
+
+# Remove image completely
+clean: down
+    docker rmi ghcr.io/dayuanjiang/next-ai-draw-io:latest
